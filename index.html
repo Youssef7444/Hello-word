@@ -227,11 +227,11 @@
     <div class="particles" id="particles"></div>
     
     <div class="container">
-        <h1 id="hello-text">Hello, World!</h1>
+        <h1 id="hello-text">Hello, World</h1>
         <p class="subtitle">Bienvenue sur ma premier page Github .</p>
         
         <div class="message-box">
-            <p>il y a tellement de choses à faire ensemble !</p>
+            <p>il y a tellement de choses à faire ensemble </p>
             <p class="color-indicator" id="color-indicator">current color : blue-purple</p>
         </div>
         
@@ -310,10 +310,6 @@
             "مرحباً بالعالم!",
             "Hola, Mundo!",
             "Bonjour, Monde!",
-            "Hallo, Welt!",
-            "Ciao, Mondo!",          
-            "Привет, мир!",
-
         ];
         
         // خيارات الألوان مع أسمائها
@@ -358,7 +354,7 @@
             
             const randomIndex = Math.floor(Math.random() * colors.length);
             document.body.style.background = colors[randomIndex].gradient;
-            colorIndicator.textContent = `اللون الحالي: ${colors[randomIndex].name}`;
+            colorIndicator.textContent = `current color: ${colors[randomIndex].name}`;
             
             updateCounter();
             
